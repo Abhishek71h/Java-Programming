@@ -1,5 +1,4 @@
 package Arrays;
-import java.util.*;
 
 public class getLargest {
     public static int getLargestValue(int arr[]) {
