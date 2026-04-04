@@ -54,6 +54,7 @@ class Human {
 
     // parameterized Constructor
     public Human(int age, int weight) {
+        this(); // accessing -> data members, data functions and constructor
         count++;
         this.age = age;
         this.weight = weight;
