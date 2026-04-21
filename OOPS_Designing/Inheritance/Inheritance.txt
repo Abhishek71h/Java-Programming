@@ -1,0 +1,81 @@
+1. Inheritance is a way to create a Class from existing Class.
+
+2. The Derived Class / Child / Sub class inherits some attributes and behaviour from Base /
+   Parent / Super Class, and may specialised attributes and behaviour.
+
+3. "When do we use Inheritance?" : Use inheritance whenever an IS-A relationship is identified between objects.
+    Example : Animal Hierarchy :
+              Base Class : Animal
+              Derived Class : Mammal, Bird, Reptile
+              Note: We can say Bird / Mammal IS-A Animal.
+
+4. Mode of Inheritance : What scope of attributes of Parents will be inherited to chid and with what Scope?
+
+                    Child Class             Child Class                 Child Class
+Parent Class        Private Mode            Protected Mode              Public Mode               
+
+Private             Not Inherited           Not Inherited               Not Inherited
+Protected           Private                 Protected                   Protected
+Public              Private                 Protected                   Public
+
+
+5. Advantages of Inheritance :
+(a) : Reusability
+(b) : Code modification
+(c) : Extensibility
+(d) : Data Hiding
+
+6. Implementing Inheritance in Java :
+(a) : Unlike C++, Java does not provide an inheritance specifier like public, protected or private i.e we can not specify mode of inheritance.
+(b) : Java does not support multiple inheritance.
+(c) : By the help of "extends" Keyword we can use inheritance.
+
+7. Super Keyword :
+(a) : It refer to the instance of its immediate parent.
+(b) : Invokes constructor of immediate parent.
+(c) : Invokes a method of immediate parent.
+
+8. Access Specifier in Java
+
+                                 Public         Private        Protected         Default
+               Class             YES            YES            YES               YES
+Same Package   Sub Class         YES            No             YES               YES
+               Non Sub Class     YES            No             YES               YES
+
+
+Different      Sub Class         YES            No             YES               No
+Package        Non Sub Class     YES            No             No                No
+
+
+9. Types of Inheritance :
+
+(a):  Single Inheritance :
+      One Derived Class inherits from one Base Class.
+      Example :
+      Base Class : Animal
+      Derived Class : Dog
+
+(b):  Multilevel Inheritance :
+      A Derived Class becomes Base Class for another class (chain structure).
+      Example :
+      Base Class : Animal
+      Derived Class : Mammal
+      Sub Derived Class : Dog
+
+(c):  Hierarchical Inheritance :
+      Multiple Derived Classes inherit from a single Base Class.
+      Example :
+      Base Class : Animal
+      Derived Classes : Dog, Cat, Cow
+
+(d):  Multiple Inheritance :
+      One Derived Class inherits from more than one Base Class.
+      Note : Java does not support multiple inheritance using classes.
+      Example (Concept) :
+      Class C inherits A and B
+      In Java : Achieved using Interfaces
+
+(e):  Hybrid Inheritance :
+      Combination of two or more types of inheritance (like multiple + hierarchical).
+      Note : Not supported directly in Java using classes.
+      In Java : Achieved using Interfaces
