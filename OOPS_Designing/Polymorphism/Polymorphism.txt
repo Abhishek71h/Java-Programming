@@ -1,0 +1,17 @@
+1. Polymorphism in Java :
+(a) : Polymorphism is greek word which means many forms.
+(b) : The ability of a single function or Operator to work in different ways based on the object 
+      it is acting upon or actual need.
+(c) : A phenomenon that allows an object to have several different forms and behaviours.
+
+2. Types of Polymorphism :
+
+(a) : Compile Time Polymorphism --> further two types 
+1. Method Overloading : same name but different arguments
+2. Operator Overloading : Java does not support Operator Overloading but internally overloads certain 
+   operators (e.g: + for string concactenation and integer addition).
+
+(b) : Run Time Polymorphism 
+1. Function Overriding : A subclass can provide a specific implementation of a method that is already defined its superclass.
+2. Dynamic Method Dispatch [Upcasting] : A superclass reference variable can refer to a subclass object and dynamic object 
+   and dynamic dispatch is used to resolve the called method at runtime.
