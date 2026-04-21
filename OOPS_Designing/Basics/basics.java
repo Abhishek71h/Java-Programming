@@ -1,4 +1,4 @@
-package OOPS_Designing;
+package OOPS_Designing.Basics;
 
 public class basics {
     public static void main(String args[]) {

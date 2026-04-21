@@ -33,7 +33,7 @@ Most Expensive Chair: Study Chair(Rs. 1900.0) by Brand 1
 package TCS_IPA_35_Marks;
 import java.util.*;
 
-public class fourthSolution {
+public class ThirdSolution {
 
     public static Chair findMostExpensiveChairDetails(Chair arr[], String brandName) {
         Chair maxChair = null;
