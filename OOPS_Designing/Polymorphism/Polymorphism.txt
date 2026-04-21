@@ -7,7 +7,7 @@
 2. Types of Polymorphism :
 
 (a) : Compile Time Polymorphism --> further two types 
-1. Method Overloading : same name but different arguments
+1. Method Overloading : same name but different arguments, Return type alone cannot differentiate methods
 2. Operator Overloading : Java does not support Operator Overloading but internally overloads certain 
    operators (e.g: + for string concactenation and integer addition).
 
@@ -15,3 +15,26 @@
 1. Function Overriding : A subclass can provide a specific implementation of a method that is already defined its superclass.
 2. Dynamic Method Dispatch [Upcasting] : A superclass reference variable can refer to a subclass object and dynamic object 
    and dynamic dispatch is used to resolve the called method at runtime.
+
+3. Key Points about Polymorphism :
+
+(a) : Method Overloading Rules :
+Method name must be same
+Arguments must be different (type / number / order)
+Return type alone cannot differentiate methods
+
+(b) : Method Overriding Rules :
+Method name and parameters must be same
+Must be in parent-child relationship
+Return type must be same or covariant
+Access modifier cannot be more restrictive
+(e.g. public → private ❌)
+
+(c) : Use of @Override Annotation :
+Helps to avoid mistakes while overriding methods
+Compiler checks if method is actually overriding
+
+(d) : Important Note :
+Static methods cannot be overridden (they are hidden)
+Final methods cannot be overridden
+Constructors cannot be overridden
