@@ -21,4 +21,4 @@ Access Modifiers: It Define the Scope of class / variable or methods
                                 They are not accessible from outside the class, including derived class.
 
 (c) : Protected Access Modifiers: Members Accessible within the same class and by derived classes.
-                                  They are not dirctly accessible from external code.                          
+                                  They are not directly accessible from external code.                          
