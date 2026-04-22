@@ -1,0 +1,31 @@
+1. Abstraction in Java :
+- Hiding internal details and showing functionality.
+- It is a design and programming method that seperates the interface from the implementation.
+- Real Life Example : Phone Calls, Airpods or To drive a car, only needs to know the driving process
+  and not the mechanism of the car engine.
+
+2. Abstract Class :
+- An abstract class in java is a class that cannot be instantiated on its own and is designed to be subclassed.
+- It can be serve as a superclass for other classes that share a common structure or behaviour.
+- An abstract class in java delivers abstraction by serving as a template for its subclasses, allowing for the 
+  definition of a common interface without specifying the complete implementation details.
+- It has come from the idea of Abstraction.
+
+3. Difference Between Abstract Class and interface
+
+        Abstract Class                              Interface
+- Can not be instantiated directly                  Cannot be instantiated
+- Can have both abstract and concrete methods.      Interface can now have default and static methods (Java 8+) and private methods (Java 9+)
+- Can have constructor, which are called when       Cannot have constructor
+  a subclass is instantiated.
+- It does not support multiple Inheritance.         Support Multiple Inheritance.
+
+
+Note to Remember for Abstract Class:
+- We use "abstract" keyword to create abstract classes and methods.
+- An abstract method does not have any implementation i.e method body.
+- A class containing abstract methods should be abstract.
+- We cannot create objects of an abstract classes.
+- To implement features of abstract class, we Inherit subclasses from it and create objects of the subclass.
+- A subclass must override all abstract methods unless it is also abstract.
+- We can access the static attributes and methods of an abstract class using the reference of abstract class.
